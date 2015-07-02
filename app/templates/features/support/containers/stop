@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+#===============================================================================
+#
+#          FILE:  start
+#
+#         USAGE:  ./start
+#
+#   DESCRIPTION: Starts the "timeslots_01" container.
+#
+#       OPTIONS:  ---
+#  REQUIREMENTS:  ---
+#          BUGS:  ---
+#         NOTES:  ---
+#        AUTHOR:  ---
+#       COMPANY:  El Corte Ingles
+#       VERSION:  1.0
+#       CREATED:  08/06/2015
+#      REVISION:  ---
+#===============================================================================
+
+CONTAINER_NAME=timeslots_01
+
+docker stop $CONTAINER_NAME

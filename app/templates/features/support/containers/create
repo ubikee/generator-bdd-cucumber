@@ -1,0 +1,40 @@
+#!/usr/bin/env bash
+#===============================================================================
+#
+#          FILE:  create
+#
+#         USAGE:  ./create
+#
+#   DESCRIPTION: Creates the container based on the given image 
+#                docker image.
+#
+#       OPTIONS:  ---
+#  REQUIREMENTS:  ---
+#          BUGS:  ---
+#         NOTES:  ---
+#        AUTHOR:  ---
+#       COMPANY:  ---
+#       VERSION:  1.0
+#       CREATED:  08/06/2015
+#      REVISION:  ---
+#===============================================================================
+
+IMAGE_NAME=devel/timeslots
+CONTAINER_NAME=timeslots_01
+
+docker rm $CONTAINER_NAME
+
+docker create \
+--name="$CONTAINER_NAME" \
+-p 80:80 \
+--dns 192.168.50.170 \
+--dns 192.168.50.171 \
+$IMAGE_NAME \
+-c /opt/timeslots/conf/config.json \
+-s "##GPER_INSTANCES##=10" \
+-s "##GPER_HOST##=10.0.23.82" \
+-s "##GPER_PORT##=3001" \
+-s "##GPER_TIMEOUT##=5000" \
+-s "##RAML_CONSOLE_URL##=http:\\\\/\\\\/10.252.59.90:9000" \
+-p /opt/timeslots \
+vertx runzip timeslots-0.1.0-SNAPSHOT-mod.zip -conf /opt/timeslots/conf/config.json

@@ -1,0 +1,20 @@
+{
+  "name": "generator-bdd-cucumber",
+  "version": "0.1.0",
+  "description": "BDD cucumber projects",
+  "files": ["app"], 
+  "keywords": ["yeoman-generator"],
+  "dependencies": {
+    "yeoman-generator": "^0.20.1"
+  },
+
+  "author": "javasaurio",
+  "homepage": "https://github.com/jeroldangarcia/generator-bdd-cucumber",  
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jeroldangarcia/generator-bdd-cucumber.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jeroldangarcia/generator-bdd-cucumber/issues"
+  }
+}
