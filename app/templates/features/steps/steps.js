@@ -2,7 +2,6 @@ module.exports = function () {
 
     var expect      = require('chai').expect;
     var fixtures    = require('../fixtures/fixtures');
-    var report      = require('../support/cucumber-report');
     this.World      = require('../support/world').World;
 
 /*
