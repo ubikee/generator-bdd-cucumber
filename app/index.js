@@ -19,8 +19,10 @@ module.exports = generators.Base.extend({
     },
 
     writing : function () {
-        this.template(this.templatePath('package.json'), this.destinationPath('package.json'), this);
-        this.directory(this.templatePath('features'), this.destinationPath('features'));
+        this.template (this.templatePath('package.json'), this.destinationPath('package.json'), this);
+        this.copy     (this.templatePath('gulpfile.js') , this.destinationPath('gulpfile.js'));
+        this.copy     (this.templatePath('gulpfile.md') , this.destinationPath('gulpfile.md'));
+        this.directory(this.templatePath('features')    , this.destinationPath('features'));
     },
 
     install : function () {

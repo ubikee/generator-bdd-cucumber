@@ -3,7 +3,9 @@ var gulp       = require('gulp')
   , cache      = require('gulp-cached');
 
 gulp.task('test', function () {
-    return gulp.src(['*features/*.feature'])
+    var argv = require('yargs').default('feature','*').argv;
+    var src = 'features/'+argv.feature+'.feature';
+    return gulp.src([src])
         .pipe(cache('features'))
         .pipe(cucumber({
             'steps'   : '*features/steps/*.js',

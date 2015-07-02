@@ -18,8 +18,7 @@
     "gulp-cucumber": "0.0.10",
     "path": "^0.11.14",
     "q": "^1.4.1",
-    "request": "^2.58.0"
-  },
-  "author": "",
-  "license": "ISC"
+    "request": "^2.58.0",
+    "yargs": "^3.14.0"
+  }
 }
