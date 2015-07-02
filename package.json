@@ -8,13 +8,13 @@
     "yeoman-generator": "^0.20.1"
   },
 
-  "author": "javasaurio",
-  "homepage": "https://github.com/jeroldangarcia/generator-bdd-cucumber",  
+  "author": "Ernesto Roldan",
+  "homepage": "https://github.com/ubikee/generator-bdd-cucumber",  
   "repository": {
     "type": "git",
-    "url": "https://github.com/jeroldangarcia/generator-bdd-cucumber.git"
+    "url": "https://github.com/ubikee/generator-bdd-cucumber.git"
   },
   "bugs": {
-    "url": "https://github.com/jeroldangarcia/generator-bdd-cucumber/issues"
+    "url": "https://github.com/ubikee/generator-bdd-cucumber/issues"
   }
 }
